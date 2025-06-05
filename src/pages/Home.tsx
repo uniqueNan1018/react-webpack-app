@@ -14,7 +14,7 @@ const treeData: TreeNodeData[] = [
                 label: '子1-2',
                 children: [
                     { id: '1-2-1', label: '孫1-2-1' },
-                    { id: '1-2-2', label: '孫1-2-1',  children: [
+                    { id: '1-2-2', label: '孫1-2-2',  children: [
                         {id: '1-2-2-1', label: '孫1-2-1-1' }
                     ]},
                 ],
@@ -35,10 +35,6 @@ const Home = () => (
             </Button>
             <Tree
                 data={treeData}
-                // customStyle={{
-                //     color: 'darkblue',
-                //     fontWeight: 'bold',
-                // }}
             />
     </div>
 );

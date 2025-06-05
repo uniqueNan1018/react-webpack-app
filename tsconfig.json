@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "ES6",
+        "target": "ESNext",
         "lib": [
             "DOM",
             "ESNext"
@@ -16,9 +16,10 @@
         },
         "module": "ESNext",
         "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
         "jsx": "react-jsx", 
         "strict": true,
-        "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
         "sourceMap": true,
