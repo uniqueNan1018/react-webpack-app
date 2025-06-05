@@ -1,3 +1,13 @@
-const env = process.env.WEBPACK_ENV || 'dev';
+const path = require('path');
 
-module.exports = require(`./webpack/webpack.${env}.js`);
+const env = process.env.NODE_ENV || 'development';
+
+const configMap = {
+  development: './webpack/webpack.dev.js',
+  production: './webpack/webpack.prod.js',
+  staging: './webpack/webpack.stg.js',
+};
+
+const configPath = configMap[env] || configMap['development'];
+
+module.exports = require(path.resolve(__dirname, configPath));

@@ -12,4 +12,9 @@ module.exports = merge(common, {
         port: 3001,
         open: true,
     },
+    output: {
+        path: path.resolve(__dirname, '../dist/dev'),
+        filename: 'bundle.[contenthash].js',
+        clean: true,
+    }
 });

@@ -5,13 +5,24 @@
             "DOM",
             "ESNext"
         ],
+        "baseUrl": "./", 
+        "paths": {
+            "@components/*": [
+                "src/components/*"
+            ],
+            "@pages/*": [
+                "src/pages/*"
+            ]
+        },
         "module": "ESNext",
         "moduleResolution": "node",
-        "jsx": "react-jsx", // React 17以降ならこれでOK（React.createElement 不要）
+        "jsx": "react-jsx", 
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true
     },
     "include": [
         "src"

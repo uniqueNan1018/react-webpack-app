@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import Tree from '../components/Tree';
+import Tree from '@components/Tree';
 import { TreeNodeData } from '../components/Tree/types';
 
 const treeData: TreeNodeData[] = [
@@ -14,6 +14,9 @@ const treeData: TreeNodeData[] = [
                 label: '子1-2',
                 children: [
                     { id: '1-2-1', label: '孫1-2-1' },
+                    { id: '1-2-2', label: '孫1-2-1',  children: [
+                        {id: '1-2-2-1', label: '孫1-2-1-1' }
+                    ]},
                 ],
             },
         ],
