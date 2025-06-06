@@ -21,6 +21,7 @@ react-webpack-app/
 │ └── webpack.stg.js
 ├── .babelrc # Babel設定
 ├── tsconfig.json # TypeScript設定
+├── jest.config.ts # Jest設定
 ├── package.json
 └── README.md
 ```
@@ -33,6 +34,7 @@ react-webpack-app/
 - [SCSS](https://sass-lang.com/)
 - [react-slick](https://react-slick.neostack.com/)（スライダー）
 - [MUI](https://mui.com/)（UIライブラリ）
+- [Jest](https://jestjs.io/ja/)（ユニットテスト）
 
 ## セットアップ
 
@@ -61,6 +63,9 @@ npm test
 - MUIによるUI構築：ボタンなどの共通UI部品が簡単に使える
 - ツリーデータ構造：ネストされたデータ表示も可能
 
+## テスト
+- 本プロジェクトには `Jest` によるユニットテストが含まれています。
+
 ## 備考
 - env を追加することで環境ごとの設定も可能です。
 - Webpackの設定は webpack/ ディレクトリにモジュール化されています。
@@ -69,6 +74,5 @@ npm test
 - eact Router を導入してルーティング対応
 - Redux や Zustand 等で状態管理
 - ESLint + Prettier によるコード整形ルール
-
 
 
