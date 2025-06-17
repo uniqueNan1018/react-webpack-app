@@ -4,6 +4,7 @@ import './styles/main.scss';
 
 const Home = lazy(() => import('@pages/Home'));
 const Profile = lazy(() => import('@pages/Profile'));
+const Chat = lazy(() => import('@pages/Chat'));
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <Routes>
                 <Route path="/home" element={<Home />} />
                 <Route path="/profile" element={<Profile />} />
+                <Route path="/chat" element={<Chat />} />
             </Routes>
         </Suspense>
     );
